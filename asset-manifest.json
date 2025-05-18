@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/your-repo-name/static/css/main.ecfbad0e.css",
+    "main.js": "/your-repo-name/static/js/main.18363796.js",
+    "static/media/CAFY_darkgrey.svg": "/your-repo-name/static/media/CAFY_darkgrey.328bbeb01472713d8297ac6b4db2f568.svg",
+    "index.html": "/your-repo-name/index.html",
+    "main.ecfbad0e.css.map": "/your-repo-name/static/css/main.ecfbad0e.css.map",
+    "main.18363796.js.map": "/your-repo-name/static/js/main.18363796.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecfbad0e.css",
+    "static/js/main.18363796.js"
+  ]
+}
