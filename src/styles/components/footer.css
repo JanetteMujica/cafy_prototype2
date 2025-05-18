@@ -1,0 +1,116 @@
+/* src/styles/components/footer.css */
+
+.footer {
+	background-color: var(--color-bg-dark);
+	color: var(--color-text-light);
+	padding: var(--space-6) 0;
+	margin-top: var(--space-6);
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: var(--space-5);
+}
+
+.footer__section {
+	margin-bottom: var(--space-4);
+}
+
+.footer__section h3 {
+	margin-bottom: var(--space-3);
+	font-size: var(--font-size-16);
+	font-weight: 700;
+	color: var(--color-text-light);
+}
+
+.footer__section p {
+	margin-bottom: var(--space-3);
+	line-height: 1.5;
+}
+
+.footer__links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer__links li {
+	margin-bottom: var(--space-2);
+	padding: 0;
+}
+
+.footer__links .ho-link {
+	color: var(--color-primary-light);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+.footer__links .ho-link:hover {
+	color: var(--color-text-light);
+	text-decoration-thickness: 2px;
+}
+
+.footer__bottom {
+	padding-top: var(--space-4);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4);
+}
+
+.footer__legal {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-4);
+}
+
+.footer__legal .ho-link {
+	color: var(--color-primary-light);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+.footer__legal .ho-link:hover {
+	color: var(--color-text-light);
+	text-decoration-thickness: 2px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+	.footer__content {
+		flex-direction: row;
+		flex-wrap: nowrap; /* Prevent wrapping to next line */
+		gap: var(--space-4); /* Consistent gap between columns */
+	}
+
+	.footer__section {
+		flex: 1 1 0; /* Equal width distribution */
+		min-width: 0; /* Allow sections to shrink if needed */
+		max-width: 33.333%; /* Limit maximum width */
+	}
+
+	.footer__bottom {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+/* Ensure proper column alignment on larger screens */
+@media (min-width: 992px) {
+	.footer__content {
+		gap: var(--space-5); /* Slightly larger gap on bigger screens */
+	}
+
+	.footer__section {
+		flex: 1 1 0; /* Keep equal flex ratio */
+	}
+}
+
+/* Make sure footer content doesn't overflow the container */
+.ho-width-container {
+	overflow: hidden;
+}

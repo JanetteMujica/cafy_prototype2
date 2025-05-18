@@ -1,0 +1,38 @@
+/* src/styles/pages/home.css */
+
+/* Additional styling specific to the homepage */
+.home-feature {
+	padding: var(--space-4) 0;
+	border-bottom: 1px solid var(--color-primary-light);
+}
+
+.home-feature:last-child {
+	border-bottom: none;
+}
+
+.home-feature__icon {
+	width: 60px;
+	height: 60px;
+	margin-bottom: var(--space-3);
+	color: var(--color-primary);
+}
+
+/* Responsive adjustments for homepage */
+@media (min-width: 768px) {
+	.home-features {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.home-feature {
+		width: 48%;
+		border-bottom: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.home-feature {
+		width: 30%;
+	}
+}

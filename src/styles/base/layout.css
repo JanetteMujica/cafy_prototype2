@@ -1,0 +1,66 @@
+/* src/styles/base/layout.css */
+
+/* Layout containers */
+.ho-width-container {
+	width: 100%;
+	max-width: var(--width-container);
+	margin: 0 auto;
+	padding: 0 var(--space-3);
+}
+
+.ho-grid-row {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.ho-grid-column-one-third,
+.ho-grid-column-two-thirds {
+	padding: 0;
+	width: 100%;
+	margin-bottom: var(--space-4);
+}
+
+/* Main content */
+.ho-main {
+	padding: var(--space-4) 0;
+}
+
+/* Container for chatbot and visualization */
+.pain-chatbot-container {
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto;
+	height: 600px;
+}
+
+.pain-visualization-container {
+	width: 100%;
+	margin: 20px auto;
+}
+
+/* Chart container */
+#chart-container {
+	min-height: 250px; /* Smaller on mobile */
+	margin-bottom: var(--space-3);
+}
+
+/* Media queries for responsive layout */
+@media (min-width: 768px) {
+	.ho-grid-row {
+		flex-direction: row;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.ho-grid-column-one-third {
+		width: 33.3333%;
+		padding: 0 15px;
+	}
+
+	.ho-grid-column-two-thirds {
+		width: 66.6666%;
+		padding: 0 15px;
+	}
+}

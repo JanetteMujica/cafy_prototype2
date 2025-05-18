@@ -1,0 +1,66 @@
+cafy_prototype2
+├─ .gitignore
+├─ package-lock.json
+├─ package.json
+├─ project-hierarchy.txt
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ README.md
+└─ src
+   ├─ App.css
+   ├─ App.js
+   ├─ App.test.js
+   ├─ assets
+   │  └─ images
+   │     ├─ CAFY_darkgrey.svg
+   │     └─ watch.png
+   ├─ components
+   │  ├─ common
+   │  │  ├─ Button.jsx
+   │  │  ├─ FormElements.jsx
+   │  │  ├─ Navbar.jsx
+   │  │  └─ Panel.jsx
+   │  ├─ layout
+   │  │  ├─ Footer.jsx
+   │  │  ├─ Header.jsx
+   │  │  └─ Layout.jsx
+   │  └─ sections
+   │     ├─ Hero.jsx
+   │     ├─ HowItWorks.jsx
+   │     └─ ImprovedHealthChart.jsx
+   ├─ index.css
+   ├─ index.js
+   ├─ logo.svg
+   ├─ pages
+   │  ├─ HomePage.jsx
+   │  ├─ MyGoalsPage.jsx
+   │  ├─ MyRecordsPage.jsx
+   │  └─ MyTrackingPage.jsx
+   ├─ reportWebVitals.js
+   ├─ setupTests.js
+   ├─ styles
+   │  ├─ base
+   │  │  ├─ layout.css
+   │  │  ├─ reset.css
+   │  │  ├─ typography.css
+   │  │  └─ variables.css
+   │  ├─ components
+   │  │  ├─ button.css
+   │  │  ├─ footer.css
+   │  │  ├─ hero.css
+   │  │  ├─ how-it-works.css
+   │  │  ├─ navbar.css
+   │  │  └─ panel.css
+   │  ├─ main.css
+   │  └─ pages
+   │     ├─ goals.css
+   │     ├─ home.css
+   │     ├─ records.css
+   │     └─ tracking.css
+   └─ utils
+      └─ accessibility.js

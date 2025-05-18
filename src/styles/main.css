@@ -1,0 +1,21 @@
+/* src/styles/main.css */
+
+/* Import base styles */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/layout.css';
+
+/* Import component styles */
+@import './components/button.css';
+@import './components/navbar.css';
+@import './components/panel.css';
+@import './components/hero.css';
+@import './components/footer.css';
+@import './components/how-it-works.css';
+
+/* Import page styles */
+@import './pages/home.css';
+@import './pages/goals.css';
+@import './pages/tracking.css';
+@import './pages/records.css';

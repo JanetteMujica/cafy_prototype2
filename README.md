@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+CAFY - Care Assistant For You
+Afficher l'image
+CAFY is a digital assistant designed to empower people living with Parkinson's. It helps users set goals, track their daily experiences, and monitor their health data in an accessible and user-friendly interface.
+Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Goal Setting: Create and manage personal health goals
+Daily Tracking: Log symptoms, medication changes, and experiences
+Data Visualization: View health data in easy-to-understand charts
+Device Integration: Connect with fitness trackers and health devices
+Report Generation: Create summaries for healthcare providers
 
-## Available Scripts
+Getting Started
+These instructions will help you set up a copy of the project on your local machine for development and testing purposes.
+Prerequisites
 
-In the project directory, you can run:
+Node.js (v16 or later)
+npm (v8 or later)
 
-### `npm start`
+Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone this repository:
+bashgit clone https://github.com/your-username/cafy-app.git
+cd cafy-app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies:
+bashnpm install
 
-### `npm test`
+Start the development server:
+bashnpm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open your browser and navigate to http://localhost:3000
 
-### `npm run build`
+Project Structure
+cafy-app/
+├── public/ # Static files
+├── src/ # Source files
+│ ├── assets/ # Images, fonts, etc.
+│ ├── components/ # Reusable React components
+│ │ ├── common/ # Shared UI components (buttons, etc.)
+│ │ ├── layout/ # Layout components (header, footer)
+│ │ └── sections/ # Page sections
+│ ├── pages/ # Page components
+│ ├── styles/ # CSS styles
+│ │ ├── base/ # Base styles (variables, reset, typography)
+│ │ ├── components/ # Component-specific styles
+│ │ └── pages/ # Page-specific styles
+│ ├── utils/ # Utility functions and helpers
+│ ├── App.js # Main app component
+│ └── index.js # Entry point
+└── README.md # Project documentation
+Development Guidelines
+Accessibility
+This project prioritizes accessibility for users with varying abilities:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use semantic HTML elements
+Ensure proper ARIA attributes
+Maintain keyboard navigation
+Test with screen readers
+Ensure sufficient color contrast
+Support text scaling and zooming
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CSS Methodology
+The project uses a component-based CSS approach:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Base styles define variables, typography, and reset styles
+Component styles are modular and self-contained
+Utility classes follow a consistent naming convention (ho-\*)
+Media queries ensure responsive design
+CSS custom properties (variables) for consistent theming
 
-### `npm run eject`
+Responsive Design
+The application is designed to work on multiple devices:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Mobile-first approach
+Flexible layouts using CSS Grid and Flexbox
+Responsive typography
+Appropriate touch targets for mobile devices
+Conditional rendering for different screen sizes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Deployment
+To build the project for production:
+bashnpm run build
+This creates a build directory with optimized files for deployment.
+Deployment Options
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+GitHub Pages: Use the gh-pages package
+bashnpm install --save-dev gh-pages
+Add to package.json:
+json"homepage": "https://your-username.github.io/cafy-app",
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
+Deploy with:
+bashnpm run deploy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Netlify: Connect your GitHub repository to Netlify for continuous deployment
+Vercel: Similar to Netlify, provides an easy way to deploy React applications
 
-## Learn More
+Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Fork the repository
+Create a feature branch: git checkout -b feature/your-feature-name
+Commit your changes: git commit -m 'Add some feature'
+Push to the branch: git push origin feature/your-feature-name
+Open a pull request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+Acknowledgments
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created to support people living with Parkinson's
+Designed with accessibility as a priority
+Built with React and modern web technologies

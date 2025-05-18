@@ -1,0 +1,90 @@
+/* src/styles/pages/goals.css */
+
+/* Goal creation form styling */
+.goal-form {
+	background-color: var(--color-bg-alt);
+	padding: var(--space-4);
+	border-radius: 4px;
+	margin-bottom: var(--space-5);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ho-form-group {
+	margin-bottom: var(--space-4);
+}
+
+.ho-label,
+.ho-fieldset-legend {
+	display: block;
+	font-weight: 600;
+	margin-bottom: var(--space-2);
+	font-size: var(--font-size-16);
+}
+
+.ho-input,
+.ho-select,
+.ho-textarea {
+	display: block;
+	width: 100%;
+	padding: var(--space-2);
+	border: 2px solid var(--color-blue-dark);
+	border-radius: 4px;
+	font-size: var(--font-size-16);
+}
+
+.ho-input:focus,
+.ho-select:focus,
+.ho-textarea:focus {
+	outline: 3px solid var(--color-blue-light);
+	outline-offset: 2px;
+}
+
+/* Radio buttons styling */
+.ho-radios {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2);
+}
+
+.ho-radio {
+	display: flex;
+	align-items: center;
+}
+
+.ho-radio__input {
+	margin-right: var(--space-2);
+}
+
+.ho-radio__label {
+	font-size: var(--font-size-16);
+}
+
+/* Goal suggestion buttons */
+.ho-suggestion-button {
+	background: none;
+	border: none;
+	color: var(--color-blue-dark);
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 0;
+	text-align: left;
+	font-size: var(--font-size-16);
+}
+
+.ho-suggestion-button:hover {
+	color: var(--color-primary);
+	text-decoration-thickness: 2px;
+}
+
+.ho-suggestion-button:focus {
+	outline: 3px solid var(--color-blue-light);
+	outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+	.ho-radios {
+		flex-direction: row;
+		gap: var(--space-4);
+	}
+}
