@@ -8,10 +8,10 @@ const MyGoalsPage = () => {
 			<div className='ho-width-container'>
 				<h1 className='ho-heading-xl'>My Goals</h1>
 				<p className='ho-body-l'>
-					Set and track your goals to receive care-tips.
+					Set your goals and track your care-priorities to receive care-tips.
 				</p>
 
-				<Link to='/mygoals' className='ho-button'>
+				<Link to='' className='ho-button'>
 					Set my goals
 				</Link>
 

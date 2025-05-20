@@ -112,3 +112,17 @@ Acknowledgments
 Created to support people living with Parkinson's
 Designed with accessibility as a priority
 Built with React and modern web technologies
+
+## Git
+
+git add .
+git commit -m "xxx"
+git push origin main
+
+## NPM
+
+### locally:
+
+npm start
+
+### Deploy:

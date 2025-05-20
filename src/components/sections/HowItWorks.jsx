@@ -12,9 +12,10 @@ const HowItWorks = () => {
 						<h2 className='ho-heading-l'>How CAFY works</h2>
 						<p className='ho-body'>
 							CAFY helps manage your daily life with Parkinson's. By setting
-							goals and tracking your experiences, you can receive care-tips,
-							spot patterns, make informed choices about your health, and share
-							updates with caregivers, support groups, and healthcare providers.
+							goals and tracking your care priorities, you can receive
+							care-tips, spot patterns, make informed choices about your health,
+							and share updates with caregivers, support groups, and healthcare
+							providers.
 						</p>
 					</div>
 
@@ -33,9 +34,7 @@ const HowItWorks = () => {
 					</div>
 
 					<div className='how-it-works__section'>
-						<h3 className='ho-heading-m'>
-							2. Track your life with Parkinson's
-						</h3>
+						<h3 className='ho-heading-m'>2. Track my care priorities</h3>
 						<p className='ho-body'>
 							Evaluate different aspects of your life by documenting your
 							thoughts, physical sensations, or changes in medication and
@@ -78,12 +77,7 @@ const HowItWorks = () => {
 						<ul className='ho-list ho-list--bullet'>
 							<li>
 								<a href='#' className='ho-link'>
-									Find a care provider
-								</a>
-							</li>
-							<li>
-								<a href='#' className='ho-link'>
-									Find a support group
+									Find care ressources
 								</a>
 							</li>
 							<li>

@@ -1,5 +1,22 @@
 cafy_prototype2
 ├─ .gitignore
+├─ build
+│  ├─ asset-manifest.json
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  ├─ robots.txt
+│  └─ static
+│     ├─ css
+│     │  ├─ main.ecfbad0e.css
+│     │  └─ main.ecfbad0e.css.map
+│     ├─ js
+│     │  ├─ main.6ca69102.js
+│     │  └─ main.6ca69102.js.LICENSE.txt
+│     └─ media
+│        └─ CAFY_darkgrey.328bbeb01472713d8297ac6b4db2f568.svg
 ├─ package-lock.json
 ├─ package.json
 ├─ project-hierarchy.txt

@@ -10,7 +10,7 @@ import './styles/main.css';
 
 function App() {
 	return (
-		<Router>
+		<Router basename='/cafy_prototype2'>
 			<Layout>
 				<Routes>
 					<Route path='/' element={<HomePage />} />

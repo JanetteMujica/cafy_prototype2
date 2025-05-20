@@ -56,12 +56,7 @@ const Footer = () => {
 						<ul className='footer__links'>
 							<li>
 								<a href='#' className='ho-link'>
-									Find a care provider
-								</a>
-							</li>
-							<li>
-								<a href='#' className='ho-link'>
-									Find a support group
+									Find care ressources
 								</a>
 							</li>
 							<li>

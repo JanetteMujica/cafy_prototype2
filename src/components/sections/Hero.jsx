@@ -14,7 +14,7 @@ const Hero = () => {
 							<span className='cafyp-emphasis'>CAFY</span>
 						</h1>
 						<h2 className='ho-heading-xl'>
-							Helps set your goals, track your life and view your records.
+							Helps set your goals, track care priorities and view your records.
 						</h2>
 					</div>
 				</div>
@@ -32,7 +32,7 @@ const Hero = () => {
 						Set my goals
 					</Link>
 					<Link to='/mytracking' className='ho-button ho-button--secondary'>
-						Track my life
+						Track my care priorities
 					</Link>
 					<Link to='/myrecords' className='ho-button ho-button--secondary'>
 						View my records
