@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cafy_prototype2/static/css/main.ecfbad0e.css",
-    "main.js": "/cafy_prototype2/static/js/main.ff013450.js",
+    "main.js": "/cafy_prototype2/static/js/main.c58da207.js",
     "static/media/CAFY_darkgrey.svg": "/cafy_prototype2/static/media/CAFY_darkgrey.328bbeb01472713d8297ac6b4db2f568.svg",
     "index.html": "/cafy_prototype2/index.html",
     "main.ecfbad0e.css.map": "/cafy_prototype2/static/css/main.ecfbad0e.css.map",
-    "main.ff013450.js.map": "/cafy_prototype2/static/js/main.ff013450.js.map"
+    "main.c58da207.js.map": "/cafy_prototype2/static/js/main.c58da207.js.map"
   },
   "entrypoints": [
     "static/css/main.ecfbad0e.css",
-    "static/js/main.ff013450.js"
+    "static/js/main.c58da207.js"
   ]
 }
