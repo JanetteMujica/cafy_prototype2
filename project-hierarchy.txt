@@ -13,13 +13,12 @@ cafy_prototype2
 │     │  ├─ main.ecfbad0e.css
 │     │  └─ main.ecfbad0e.css.map
 │     ├─ js
-│     │  ├─ main.6ca69102.js
-│     │  └─ main.6ca69102.js.LICENSE.txt
+│     │  ├─ main.c58da207.js
+│     │  └─ main.c58da207.js.LICENSE.txt
 │     └─ media
 │        └─ CAFY_darkgrey.328bbeb01472713d8297ac6b4db2f568.svg
 ├─ package-lock.json
 ├─ package.json
-├─ project-hierarchy.txt
 ├─ public
 │  ├─ favicon.ico
 │  ├─ index.html
@@ -41,7 +40,8 @@ cafy_prototype2
    │  │  ├─ Button.jsx
    │  │  ├─ FormElements.jsx
    │  │  ├─ Navbar.jsx
-   │  │  └─ Panel.jsx
+   │  │  ├─ Panel.jsx
+   │  │  └─ TextToSpeechButton.jsx
    │  ├─ layout
    │  │  ├─ Footer.jsx
    │  │  ├─ Header.jsx
@@ -56,7 +56,7 @@ cafy_prototype2
    ├─ pages
    │  ├─ HomePage.jsx
    │  ├─ MyGoalsPage.jsx
-   │  ├─ MyRecordsPage.jsx
+   │  ├─ MyJourneyPage.jsx
    │  └─ MyTrackingPage.jsx
    ├─ reportWebVitals.js
    ├─ setupTests.js
@@ -68,11 +68,13 @@ cafy_prototype2
    │  │  └─ variables.css
    │  ├─ components
    │  │  ├─ button.css
+   │  │  ├─ compact-tts.css
    │  │  ├─ footer.css
    │  │  ├─ hero.css
    │  │  ├─ how-it-works.css
    │  │  ├─ navbar.css
-   │  │  └─ panel.css
+   │  │  ├─ panel.css
+   │  │  └─ text-to-speech.css
    │  ├─ main.css
    │  └─ pages
    │     ├─ goals.css

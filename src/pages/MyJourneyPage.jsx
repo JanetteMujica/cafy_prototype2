@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ImprovedHealthChart from '../components/sections/ImprovedHealthChart';
 
-const MyRecordsPage = () => {
+const MyJourneyPage = () => {
 	const [timeRange, setTimeRange] = useState('month');
 	const [loading, setLoading] = useState(true);
 	const [selectedCategory, setSelectedCategory] = useState(null);
@@ -441,7 +441,7 @@ const MyRecordsPage = () => {
 	return (
 		<main className='ho-main'>
 			<div className='ho-width-container'>
-				<h1 className='ho-heading-xl'>My Records</h1>
+				<h1 className='ho-heading-xl'>My Journey</h1>
 				<p className='ho-body-l'>View and analyze your health data patterns.</p>
 
 				{/* Status Message */}
@@ -638,4 +638,4 @@ const MyRecordsPage = () => {
 	);
 };
 
-export default MyRecordsPage;
+export default MyJourneyPage;

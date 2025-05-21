@@ -1,0 +1,245 @@
+/* src/styles/components/compact-tts.css */
+
+/* Floating compact button in the corner */
+.compact-tts {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	z-index: 900;
+	transition: all 0.3s ease;
+	max-width: 300px;
+	border: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+
+/* When expanded, show more controls */
+.compact-tts.expanded {
+	padding: 12px;
+	width: 260px;
+}
+
+/* When collapsed, just show the main button */
+.compact-tts.collapsed {
+	padding: 8px;
+	width: auto;
+}
+
+/* When speaking, highlight with color */
+.compact-tts.speaking {
+	border-color: var(--color-primary, #0078d4);
+	box-shadow: 0 3px 12px rgba(0, 120, 212, 0.25);
+}
+
+/* Main controls */
+.compact-tts-main {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Toggle button to expand/collapse */
+.compact-tts-toggle {
+	background: none;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #555;
+	font-size: 12px;
+	padding: 0;
+}
+
+.compact-tts-toggle:hover {
+	background-color: #f5f5f5;
+}
+
+/* Main read/stop button */
+.compact-tts-button {
+	background-color: var(--color-primary, #0078d4);
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 16px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.compact-tts-button:hover {
+	background-color: var(--color-primary-dark, #106ebe);
+}
+
+/* Stop button styling */
+.speaking .compact-tts-button {
+	background-color: #d42a2a;
+}
+
+.speaking .compact-tts-button:hover {
+	background-color: #b52424;
+}
+
+/* Settings panel when expanded */
+.compact-tts-settings {
+	margin-top: 12px;
+	padding-top: 10px;
+	border-top: 1px solid #e0e0e0;
+}
+
+/* Individual control groups */
+.compact-tts-control {
+	margin-bottom: 10px;
+}
+
+/* Control labels */
+.compact-tts-label {
+	display: block;
+	font-size: 12px;
+	color: #555;
+	margin-bottom: 4px;
+}
+
+/* Voice selection controls */
+.voice-display {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+	font-size: 11px;
+	color: #666;
+	font-style: italic;
+	margin-top: 8px;
+	padding-top: 8px;
+	border-top: 1px dashed #e0e0e0;
+}
+
+.voice-change-button {
+	background: none;
+	border: none;
+	color: #555;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 2px 4px;
+	border-radius: 3px;
+}
+
+.voice-change-button:hover {
+	background-color: #f0f0f0;
+}
+
+.voice-selector {
+	margin-top: 8px;
+	padding-top: 8px;
+	border-top: 1px dashed #e0e0e0;
+}
+
+.compact-tts-select {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0 8px;
+	font-size: 12px;
+	margin-top: 4px;
+	background-color: white;
+}
+
+/* Slider styling */
+.compact-tts-slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 6px;
+	background: #d3d3d3;
+	border-radius: 3px;
+	outline: none;
+}
+
+.compact-tts-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--color-primary, #0078d4);
+	cursor: pointer;
+	border: 2px solid white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.compact-tts-slider::-moz-range-thumb {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--color-primary, #0078d4);
+	cursor: pointer;
+	border: 2px solid white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Text highlighting styles */
+.tts-highlight {
+	background-color: rgba(255, 230, 10, 0.35);
+	border-radius: 3px;
+	box-shadow: 0 0 0 2px rgba(255, 230, 10, 0.25);
+	animation: tts-pulse 2s infinite ease-in-out;
+}
+
+@keyframes tts-pulse {
+	0% {
+		background-color: rgba(255, 230, 10, 0.25);
+	}
+	50% {
+		background-color: rgba(255, 230, 10, 0.4);
+	}
+	100% {
+		background-color: rgba(255, 230, 10, 0.25);
+	}
+}
+
+.tts-text-node {
+	transition: background-color 0.3s ease;
+}
+
+/* Accessibility helper */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/* Parkinson's-specific accessibility enhancements */
+@media (any-pointer: coarse) {
+	.compact-tts-button {
+		padding: 12px 18px;
+		font-size: 16px;
+	}
+
+	.compact-tts-toggle {
+		width: 36px;
+		height: 36px;
+		font-size: 14px;
+	}
+
+	.compact-tts-slider::-webkit-slider-thumb {
+		width: 24px;
+		height: 24px;
+	}
+
+	.compact-tts-slider::-moz-range-thumb {
+		width: 24px;
+		height: 24px;
+	}
+}

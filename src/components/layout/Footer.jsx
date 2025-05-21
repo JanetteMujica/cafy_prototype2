@@ -15,14 +15,13 @@ const Footer = () => {
 							</span>
 						</h3>
 						<p className='ho-body-s'>
-							A digital assistant designed to empower people living with
-							Parkinson's.
+							Your companion for living well with Parkinson's
 						</p>
 
 						<ul className='footer__links'>
 							<li>
 								<a href='#' className='ho-link'>
-									Get assistance about this app
+									Reach out for support about about using CAFY
 								</a>
 							</li>
 						</ul>
@@ -54,6 +53,11 @@ const Footer = () => {
 					<div className='footer__section'>
 						<h3 className='ho-heading-s'>Resources</h3>
 						<ul className='footer__links'>
+							<li>
+								<a href='#' className='ho-link'>
+									Review my care-tips
+								</a>
+							</li>
 							<li>
 								<a href='#' className='ho-link'>
 									Find care ressources

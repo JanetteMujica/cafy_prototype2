@@ -13,6 +13,8 @@
 @import './components/hero.css';
 @import './components/footer.css';
 @import './components/how-it-works.css';
+@import './components/text-to-speech.css';
+@import './components/compact-tts.css';
 
 /* Import page styles */
 @import './pages/home.css';

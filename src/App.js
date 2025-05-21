@@ -5,7 +5,7 @@ import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import MyGoalsPage from './pages/MyGoalsPage';
 import MyTrackingPage from './pages/MyTrackingPage';
-import MyRecordsPage from './pages/MyRecordsPage';
+import MyJourneyPage from './pages/MyJourneyPage';
 import './styles/main.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 					<Route path='/' element={<HomePage />} />
 					<Route path='/mygoals' element={<MyGoalsPage />} />
 					<Route path='/mytracking' element={<MyTrackingPage />} />
-					<Route path='/myrecords' element={<MyRecordsPage />} />
+					<Route path='/myjourney' element={<MyJourneyPage />} />
 				</Routes>
 			</Layout>
 		</Router>

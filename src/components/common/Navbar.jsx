@@ -60,11 +60,11 @@ const Navbar = () => {
 					My Tracking
 				</Link>
 				<Link
-					to='/myrecords'
-					className={`navbar__item ${isActive('/myrecords')}`}
+					to='/myjourney'
+					className={`navbar__item ${isActive('/myjourney')}`}
 					onClick={() => setIsMenuOpen(false)}
 				>
-					My Records
+					My Journey
 				</Link>
 			</div>
 		</nav>

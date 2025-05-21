@@ -14,28 +14,25 @@ const Hero = () => {
 							<span className='cafyp-emphasis'>CAFY</span>
 						</h1>
 						<h2 className='ho-heading-xl'>
-							Helps set your goals, track care priorities and view your records.
+							Help you take control of your daily life with Parkinson's, one
+							small step at a time.
 						</h2>
 					</div>
 				</div>
 
 				<p className='ho-body-l'>
-					A digital assistant designed to{' '}
-					<span style={{ color: 'var(--color-blue-light)', fontWeight: 700 }}>
-						empower
-					</span>{' '}
-					people living with Parkinson's.
+					Your companion for living well with Parkinson's
 				</p>
 
 				<div className='button-group'>
 					<Link to='/mygoals' className='ho-button'>
-						Set my goals
+						Start setting my goals
 					</Link>
 					<Link to='/mytracking' className='ho-button ho-button--secondary'>
 						Track my care priorities
 					</Link>
 					<Link to='/myrecords' className='ho-button ho-button--secondary'>
-						View my records
+						View my journey
 					</Link>
 				</div>
 			</div>

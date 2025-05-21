@@ -121,8 +121,10 @@ git push origin main
 
 ## NPM
 
-### locally:
+### run locally:
 
 npm start
 
-### Deploy:
+### Deploy to github page:
+
+npm run deploy
